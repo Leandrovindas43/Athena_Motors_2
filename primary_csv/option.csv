@@ -1,0 +1,12 @@
+text,des,code
+"Mi horario atecion a nuestros clientes es de lunes a domingo las 24 horas del dia", "Cual es el horario del callcenter o servicio al cliente", 0
+"Las entregas de los repuestos duran 24 horas hábiles, y los pedidos especialis estan sostenidos a 30 dias aviles sujetos a disponibilidad de fabrica", "Cuanto dura las entregas", 0
+"Mi nombre es Athena y estoy aqui para ayudarle", "Cual es tu nombre que es lo que haces", 0
+"Los horarios de nuestros servicios en persona son de 7am a 5pm de lunes a sabado", "cuentan con servicios", 0
+"Contamos con servicios de talleres especializados, venta de refacciones para vehiculos Volkswagen, Audi y Ford y sus consultas", "que servicios cuentan ustedes", 0
+"Manejamos las marcas Volkswagen, Audi y Ford", "que marcas manejan ustedes", 0
+"No contamos con esos servicios", "cuentan con servicios", 0
+"Nuestros metosdos de pago son por medio de tarjeta de credito o devito, aceptamos efectivo si llega a nuestras oficinas", "cuentan con servicios de pago", 0
+"Cambiar unas divisas", "quiero cambiar unas divisas", 1
+"Comprar unos repuestos", "quiero comprar unos repuestos", 2
+"Quieres hacer una cosulta", "Quiero consultar", 3
