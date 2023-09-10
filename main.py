@@ -3,7 +3,7 @@ from cgitb import text
 from sp_recog import audio
 from voice import class_voice
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 class class_question:
     def question():
         def enviar_prompt(prompt, engine="text-davinci-003", temp=0.5, max_tokens=100, top_p=1, frequency_penalty=0, presence_penalty=0):
@@ -23,4 +23,5 @@ class class_question:
         entry = audio.get_audio(Self, text)
         respuesta = enviar_prompt(entry)
         class_voice.fun_voice(respuesta)
+
         

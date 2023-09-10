@@ -10,7 +10,7 @@ import openai
 import pandas as pd
 from openai.embeddings_utils import get_embedding
 from openai.embeddings_utils import cosine_similarity
-openai.api_key = "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"
+openai.api_key = "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"
 
 def embed_text(path="texto.csv"):
     conocimiento_df = pd.read_csv(path)
@@ -65,7 +65,6 @@ while True:
         obj.question()
         
         
-
     else:
         speak = "Desearia saber algo mas?"
         class_voice.fun_voice(text_str)

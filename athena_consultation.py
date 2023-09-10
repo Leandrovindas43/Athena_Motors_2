@@ -3,10 +3,10 @@ from cgitb import text
 from sp_recog import audio
 from voice import class_voice
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 class class_consultation:
     def question():
-        def enviar_prompt(prompt, engine="text-davinci-003", temp=0.5, max_tokens=100, top_p=1, frequency_penalty=0, presence_penalty=0):
+        def enviar_prompt(prompt, engine="text-davinci-003", temp=0.5, max_tokens=1000, top_p=1, frequency_penalty=0, presence_penalty=0):
             respuesta = openai.Completion.create(
                                                     engine=engine,
                                                     prompt=prompt,
@@ -18,9 +18,10 @@ class class_consultation:
                                                     )
             return respuesta['choices'][0]['text']
          
-        speak = f"Cual seria su cosulta?"
+        speak = f"Cual seria su consulta?"
         class_voice.fun_voice(speak)
         entry = audio.get_audio(Self, text)
         respuesta = enviar_prompt(entry)
         class_voice.fun_voice(respuesta)
-        exit()
+        
+

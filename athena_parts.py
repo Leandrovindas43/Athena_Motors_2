@@ -9,13 +9,13 @@ from athena_register import class_register
 from voice import class_voice
 from openai.embeddings_utils import get_embedding
 from openai.embeddings_utils import cosine_similarity
-openai.api_key = "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"
+openai.api_key = "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"
 
 connection = pymysql.connect(
     host='aws.connect.psdb.cloud',  # Si es remota "ip"
-    user='3upo4vz7ot99y168410o',
+    user='xbmc1wn15bbl5wdezy8h',
     port=3306,
-    passwd='pscale_pw_GPwjNJGmlvQGcjW2UkKMdgOGNNsiDUScYapoOAZWPXW',
+    passwd='pscale_pw_Srzi7GvBZ3Cppbth9zkUW8RKZgl321Gd1kV99DSCTSx',
     db='athena_motors',
     ssl      = {
     "ca": "/etc/ssl/cert.pem"

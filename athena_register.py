@@ -8,9 +8,9 @@ import re
 
 connection = pymysql.connect(
     host='aws.connect.psdb.cloud',  # Si es remota "ip"
-    user='3upo4vz7ot99y168410o',
+    user='xbmc1wn15bbl5wdezy8h',
     port=3306,
-    passwd='pscale_pw_GPwjNJGmlvQGcjW2UkKMdgOGNNsiDUScYapoOAZWPXW',
+    passwd='pscale_pw_Srzi7GvBZ3Cppbth9zkUW8RKZgl321Gd1kV99DSCTSx',
     db='athena_motors',
     ssl      = {
     "ca": "/etc/ssl/cert.pem"
@@ -70,9 +70,13 @@ class class_register:
                 '''.format(user[0], last_name , user[5], "none", "none", mail)
             cursor.execute(sql)
             connection.commit()
+            speak = "Su compra se a realizado con exito"
+            class_voice.fun_voice(speak)
             obj = class_mail
             obj.mail(id, brand, line, year, vin, part_number, brand_part, price, product_Name)
             
         else:
+            speak = "Su compra se a realizado con exito"
+            class_voice.fun_voice(speak)
             obj = class_mail
             obj.mail(id, brand, line, year, vin, part_number, brand_part, price, product_Name)

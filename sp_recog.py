@@ -16,7 +16,7 @@ class audio:
                     return text
             except:
                 recorder = sr.Recognizer()
-                speak = "Te puedo servir en algo mas??"
+                speak = "Te puedo ayudar en algo mas??"
                 class_voice.fun_voice(speak)
                 print(speak)
                 continue

@@ -8,7 +8,7 @@ import azure.cognitiveservices.speech as speechsdk
 class class_voice:
         
     def fun_voice(text):   
-        speech_config = speechsdk.SpeechConfig(subscription='172b68e4cf6f4c7e9ddab8641d54ce92', region='eastus')
+        speech_config = speechsdk.SpeechConfig(subscription='66610c7a5b314a06beee0d6bddcab922', region='eastus')
         # Note: the voice setting will not overwrite the voice element in input SSML.
         speech_config.speech_synthesis_voice_name = "es-MX-BeatrizNeural"
         # use the default speaker as audio output.
@@ -23,6 +23,7 @@ class class_voice:
             print("Speech synthesis canceled: {}".format(cancellation_details.reason))
             if cancellation_details.reason == speechsdk.CancellationReason.Error:
                 print("Error details: {}".format(cancellation_details.error_details))
+
 
 
 
